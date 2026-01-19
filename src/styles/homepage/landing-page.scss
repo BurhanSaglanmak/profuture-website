@@ -1,0 +1,66 @@
+@use '../colors' as *;
+
+.landing-page-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 140px;
+    @media (max-width:550px) {
+        padding-left: 20px;
+    }
+    h1 {
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 28px;
+        color: $white-smoke;
+        margin-bottom: 10px;
+        max-width: 400px;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        color: $white;
+        max-width: 400px;
+        margin-bottom: 10px;
+    }
+
+    .landing-page-info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        span {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            gap: 5px;
+        }
+    }
+
+    a {
+        display: flex;
+        margin-top: 50px;
+        padding: 16.5px 15px;
+        background-color: $primary-blue;
+        border-radius: 50px;
+        gap: 10px;
+        transition: all 0.2s ease;
+
+        img {
+            width: 16px;
+            height: 16px;
+
+        }
+
+        &:hover {
+            background-color: $stroke;
+            color: $dark-gray;
+            img{
+                filter: invert(1);
+            }
+        }
+    }
+}
