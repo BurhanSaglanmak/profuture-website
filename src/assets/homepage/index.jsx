@@ -8,3 +8,7 @@ export { default as Digital } from "./digital.svg";
 export { default as Download } from "./download.svg";
 export { default as Eye } from "./eye.svg";
 export { default as PDF } from "./pdf.svg";
+export { default as Dergi4lu } from "./dergi4lu.svg";
+export { default as ProfutureInfo } from "./profuture-info.svg";
+export { default as Promotion } from "./promotion.svg";
+export { default as ArticleBG } from "./article-bg.svg";

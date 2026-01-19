@@ -1,6 +1,6 @@
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
-import { Features, LandingPage, Magazines } from "../../components/homepage";
+import { Article, Features, LandingPage, Magazines } from "../../components/homepage";
 
 export default function HomePage() {
 
@@ -58,12 +58,18 @@ export default function HomePage() {
                 status: "YENİ",
             }
         ]
+    const articleData = {
+        title: "Türkiye Ulusal Dijital Veri ve Altyapıları",
+        description: "Bu dosya kapsamında; ulusal ölçekte dijital veri yönetimi, kamu ve özel sektörde teknoloji altyapıları, yapay zekâ uygulamaları, büyük veri analitiği, siber güvenlik, akıllı sistemler ve dijital dönüşüm odaklı özgün, güncel ve disiplinlerarası akademik çalışmalar değerlendirilecektir.",
+        link: "/makale-cagrisi"
+    }
     return (
         <>
             <Header />
             <LandingPage LandingPageData={landingPageData} />
             <Features FeaturesData={featuresData} />
             <Magazines MagazinesData={magazinesData} />
+            <Article ArticleData={articleData} />
             <Footer />
         </>
     )
