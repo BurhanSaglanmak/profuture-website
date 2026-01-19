@@ -4,3 +4,7 @@ export { default as CiltIcon } from "./cilt.svg";
 export { default as LandingBG } from "./landing-bg.svg";
 export { default as NumberIcon } from "./Number.svg";
 export { default as Dergi } from "./dergi.svg";
+export { default as Digital } from "./digital.svg";
+export { default as Download } from "./download.svg";
+export { default as Eye } from "./eye.svg";
+export { default as PDF } from "./pdf.svg";

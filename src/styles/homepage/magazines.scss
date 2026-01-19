@@ -1,0 +1,247 @@
+@use '../colors' as *;
+
+.magazines-container {
+    display: flex;
+    margin: 70px 0 110px 0;
+    flex-direction: column;
+    padding: 0 140px;
+
+    @media (max-width:750px) {
+        padding: 0 20px;
+    }
+
+    .magazines-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 35px;
+
+        &-titles {
+            display: flex;
+            align-items: flex-end;
+            gap: 19px;
+
+            .magazines-title {
+                display: flex;
+                flex-direction: column;
+                gap: 19px;
+
+                h5 {
+                    font-size: 22px;
+                    color: $gray;
+                    margin: 0;
+                }
+
+                h2 {
+                    font-size: 28px;
+                    margin: 0;
+                    color: $primary-blue;
+                }
+            }
+
+            .magazines-arrow {
+                display: flex;
+                gap: 10px;
+
+                @media (max-width:550px) {
+                    display: none;
+                }
+
+                button {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    border: 1px solid $stroke;
+                    background-color: $white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    transition: all 0.2s ease;
+
+                    img {
+                        width: 16px;
+                        height: 16px;
+                        filter: invert(1);
+                    }
+
+                    &:hover {
+                        background-color: $primary-blue;
+                        border-color: $primary-blue;
+
+                        img {
+                            filter: invert(0);
+                        }
+                    }
+
+                    &.swiper-button-disabled {
+                        opacity: 0.5;
+                        cursor: not-allowed;
+                    }
+                }
+            }
+        }
+
+        a {
+            display: flex;
+            margin-top: 50px;
+            padding: 16.5px 15px;
+            border-radius: 50px;
+            gap: 20px;
+            transition: all 0.2s ease;
+            background-color: $white;
+            color: $dark-gray;
+            width: fit-content;
+            border: 1px solid $stroke;
+            font-size: 15px;
+
+            img {
+                width: 16px;
+                height: 16px;
+                filter: invert(1);
+                margin: 0;
+            }
+
+            &:hover {
+                background-color: $primary-blue;
+                color: $white;
+                border: 1px solid $primary-blue;
+
+                img {
+                    filter: invert(0);
+                }
+            }
+        }
+    }
+
+    .magazines-list {
+        display: flex;
+        gap: 20px;
+
+        .swiper {
+            width: 100%;
+        }
+
+        .magazine-item {
+            display: flex;
+            background-color: $white;
+            padding: 16px;
+            border-radius: 15px;
+            min-width: 400px;
+
+            @media (max-width:750px) {
+                padding: 16px 16px 16px 0;
+
+            }
+
+            &-info {
+                display: flex;
+                flex-direction: column;
+                padding: 0 15px;
+
+                &-header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+
+                    span {
+                        font-size: 12px;
+                        color: $white;
+                        background-color: $turquoise;
+                        padding: 3px 8px;
+                        border-radius: 50px;
+                    }
+                }
+
+                .magazine-type {
+                    font-size: 14px;
+                    color: $secondary-blue;
+                    padding: 3px 10px;
+                    background-color: $light-white;
+                    border-radius: 5px;
+                    width: fit-content;
+                }
+
+                .magazine-title {
+                    font-size: 20px;
+                    color: $secondary-blue;
+                    margin: 10px 0 20px 0;
+                    max-width: 211px;
+                    font-weight: bold;
+                }
+
+                &-body {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    flex-wrap: wrap;
+                    max-width: 211px;
+
+                    span {
+                        align-items: center;
+                        justify-content: center;
+                        display: flex;
+                        gap: 5px;
+                        color: $dark-gray;
+
+                        img {
+                            filter: invert(1);
+                        }
+                    }
+                }
+
+                .magazine-links {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    gap: 15px;
+                    margin-top: 70px;
+
+                    .magazine-link {
+                        display: flex;
+                        padding: 16.5px 15px;
+                        border-radius: 50px;
+                        gap: 50px;
+                        transition: all 0.2s ease;
+                        background-color: $white;
+                        color: $dark-gray;
+                        width: fit-content;
+                        border: 1px solid $stroke;
+                        font-size: 15px;
+                        cursor: pointer;
+
+                        &-invert {
+                            img {
+                                filter: invert(0) !important;
+                            }
+
+                            &:hover {
+                                img {
+                                    filter: invert(1) !important;
+                                }
+                            }
+                        }
+
+                        img {
+                            width: 16px;
+                            height: 16px;
+                            filter: invert(1);
+                            margin: 0;
+                        }
+
+                        &:hover {
+                            background-color: $primary-blue;
+                            color: $white;
+                            border: 1px solid $primary-blue;
+
+                            img {
+                                filter: invert(0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
