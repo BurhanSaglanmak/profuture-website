@@ -14,6 +14,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { isNew } from "../../utils/Date";
 
 export default function Magazines({ MagazinesData }) {
     const prevRef = useRef(null);
@@ -44,7 +45,7 @@ export default function Magazines({ MagazinesData }) {
             <div className="magazines-list">
                 <Swiper
                     modules={[Navigation]}
-                    spaceBetween={20}
+                    spaceBetween={50}
                     slidesPerView={1}
                     navigation={{ prevEl: prevRef.current, nextEl: nextRef.current, }}
                     onBeforeInit={(swiper) => {
@@ -63,7 +64,10 @@ export default function Magazines({ MagazinesData }) {
                     {MagazinesData.map((magazine, index) => (
                         <SwiperSlide key={index}>
                             <div className="magazine-item">
-                                <img src={Digital} alt="Dijital" />
+                                <>
+                                    {isNew(magazine.creatAt) && <span className="new-badge">SON SAYI</span>}
+                                    <img src={Digital} alt="Dijital" />
+                                </>
                                 <div className="magazine-item-info">
                                     <div className="magazine-item-info-header">
                                         <img src={PDF} alt="PDF" />

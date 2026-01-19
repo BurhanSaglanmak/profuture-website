@@ -128,10 +128,24 @@
             padding: 16px;
             border-radius: 15px;
             min-width: 400px;
+            border: 1px solid $secondary-stroke;
 
             @media (max-width:750px) {
                 padding: 16px 16px 16px 0;
+            }
 
+            .new-badge {
+                position: absolute;
+                background-color: $primary-red;
+                color: $white;
+                padding: 8px 15px;
+                z-index: 10;
+                position: absolute;
+                font-size: 16px;
+                border-radius: 0 0 15px 15px;
+                top: 50%;
+                rotate: -90deg;
+                left: -30px;
             }
 
             &-info {

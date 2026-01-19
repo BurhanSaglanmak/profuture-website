@@ -29,6 +29,7 @@ export default function HomePage() {
                 tarih: "Aralık 2022",
                 type: "Dergi",
                 status: "YENİ",
+                creatAt: "2026-01-01"
             },
             {
                 id: 2,
@@ -38,6 +39,7 @@ export default function HomePage() {
                 tarih: "Aralık 2022",
                 type: "Dergi",
                 status: "YENİ",
+                creatAt: "2022-12-15"
             },
             {
                 id: 3,
@@ -47,6 +49,7 @@ export default function HomePage() {
                 tarih: "Aralık 2022",
                 type: "Dergi",
                 status: "YENİ",
+                creatAt: "2022-12-15"
             },
             {
                 id: 4,
@@ -56,6 +59,7 @@ export default function HomePage() {
                 tarih: "Aralık 2022",
                 type: "Dergi",
                 status: "YENİ",
+                creatAt: "2022-12-15"
             }
         ]
     const articleData = {
