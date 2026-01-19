@@ -1,0 +1,71 @@
+@use '../colors' as *;
+
+.notfound {
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $white;
+
+    h1 {
+        font-size: 8rem;
+        font-weight: 800;
+        margin-bottom: 8px;
+        letter-spacing: 4px;
+        color: $primary-red;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 12px;
+        color: $cream;
+    }
+
+    p {
+        font-size: 1.1rem;
+        max-width: 420px;
+        margin-bottom: 32px;
+        line-height: 1.6;
+        color: $cream;
+    }
+
+    a {
+        display: inline-block;
+        padding: 12px 28px;
+        border-radius: 999px;
+        background-color: $white;
+        color: $dark-gray;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.2s ease;
+
+        &:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+            background-color: $dark-gray;
+            color: $white;
+        }
+
+        &:active {
+            transform: translateY(0);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}
