@@ -1,0 +1,80 @@
+@use '../colors' as *;
+
+.features-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .features-info {
+        padding: 20px 10px;
+
+        h5 {
+            color: $gray;
+            font-size: 22px;
+            margin: 0 0 12px 0;
+        }
+
+        h2 {
+            color: $primary-blue;
+            font-size: 28px;
+            margin: 0 0 13px 0;
+        }
+
+        p {
+            max-width: 700px;
+            color: $dark-gray;
+            font-size: 18px;
+        }
+
+        a {
+            display: flex;
+            margin-top: 50px;
+            padding: 16.5px 15px;
+            border-radius: 50px;
+            gap: 50px;
+            transition: all 0.2s ease;
+            background-color: $white;
+            color: $dark-gray;
+            width: fit-content;
+            border: 1px solid $stroke;
+            font-size: 15px;
+
+            img {
+                width: 16px;
+                height: 16px;
+                filter: invert(1);
+                margin: 0;
+            }
+
+            &:hover {
+                background-color: $primary-blue;
+                color: $white;
+                border: 1px solid $primary-blue;
+
+                img {
+                    filter: invert(0);
+
+                }
+            }
+        }
+    }
+
+    img {
+        width: 739px;
+        height: 696px;
+        margin-top: -300px;
+
+        @media (max-width:1450px) {
+            width: 50%;
+            height: auto;
+            margin-top: 0;
+        }
+
+        @media (max-width:500px) {
+            width: 75%;
+            height: auto;
+            margin-top: 0;
+        }
+    }
+}

@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router';
 import {
-    ArrowWhiteIcon,
+    ArrowIcon,
     CalendarIcon,
     CiltIcon,
     LandingBG,
@@ -38,7 +38,7 @@ export default function LandingPage({ LandingPageData }) {
             </div>
             <Link to={`dergi/${LandingPageData.cilt}/${LandingPageData.sayi}`}>
                 Dergiyi Görüntüle
-                <img src={ArrowWhiteIcon} alt="Ok" />
+                <img src={ArrowIcon} alt="Ok" />
             </Link>
         </div>
     )
