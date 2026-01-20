@@ -1,6 +1,6 @@
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
-import { Article, Features, LandingPage, Magazines } from "../../components/homepage";
+import { Article, Features, LandingPage, Magazines, CurrentArticles } from "../../components/homepage";
 
 export default function HomePage() {
 
@@ -67,6 +67,48 @@ export default function HomePage() {
         description: "Bu dosya kapsamında; ulusal ölçekte dijital veri yönetimi, kamu ve özel sektörde teknoloji altyapıları, yapay zekâ uygulamaları, büyük veri analitiği, siber güvenlik, akıllı sistemler ve dijital dönüşüm odaklı özgün, güncel ve disiplinlerarası akademik çalışmalar değerlendirilecektir.",
         link: "/makale-cagrisi"
     }
+    const currentArticleData = [
+        {
+            id: 1,
+            badges: ["İklim", "Araştırma Makalesi"],
+            title: "Türkiye'nin Teknoloji Politikaları ve Döngüsel Ekonomi",
+            page: "12-28",
+            editor: "Elif Başkaya Acar, Emre Taran, Halil Başar",
+            link: "/makaleler/turkiye-ulusal-dijital-veri-ve-altyapilari"
+        },
+        {
+            id: 2,
+            badges: ["İklim", "Araştırma Makalesi"],
+            title: "Türkiye'nin Teknoloji Politikaları ve Döngüsel Ekonomi",
+            page: "12-28",
+            editor: "Elif Başkaya Acar, Emre Taran, Halil Başar",
+            link: "/makaleler/turkiye-ulusal-dijital-veri-ve-altyapilari"
+        },
+        {
+            id: 3,
+            badges: ["İklim", "Araştırma Makalesi"],
+            title: "Türkiye'nin Teknoloji Politikaları ve Döngüsel Ekonomi",
+            page: "12-28",
+            editor: "Elif Başkaya Acar, Emre Taran, Halil Başar",
+            link: "/makaleler/turkiye-ulusal-dijital-veri-ve-altyapilari"
+        },
+        {
+            id: 4,
+            badges: ["İklim", "Araştırma Makalesi"],
+            title: "Türkiye'nin Teknoloji Politikaları ve Döngüsel Ekonomi",
+            page: "12-28",
+            editor: "Elif Başkaya Acar, Emre Taran, Halil Başar",
+            link: "/makaleler/turkiye-ulusal-dijital-veri-ve-altyapilari"
+        },
+        {
+            id: 4,
+            badges: ["İklim", "Araştırma Makalesi"],
+            title: "Türkiye'nin Teknoloji Politikaları ve Döngüsel Ekonomi",
+            page: "12-28",
+            editor: "Elif Başkaya Acar, Emre Taran, Halil Başar",
+            link: "/makaleler/turkiye-ulusal-dijital-veri-ve-altyapilari"
+        },
+    ]
     return (
         <>
             <Header />
@@ -74,6 +116,7 @@ export default function HomePage() {
             <Features FeaturesData={featuresData} />
             <Magazines MagazinesData={magazinesData} />
             <Article ArticleData={articleData} />
+            <CurrentArticles CurrentArticlesData={currentArticleData} />
             <Footer />
         </>
     )

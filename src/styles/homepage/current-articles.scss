@@ -1,0 +1,295 @@
+@use '../colors' as *;
+
+.current-articles {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 140px;
+
+    @media (max-width:850px) {
+        padding: 0 20px;
+        justify-content: center;
+    }
+
+    &-image {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 140px;
+        align-items: center;
+        justify-content: center;
+        background-color: $white;
+        border: 5px solid $stroke-red;
+        border-radius: 30px;
+
+        >div {
+            position: relative;
+        }
+
+        .last-article {
+            padding: 15px 19px 25px 19px;
+
+            @media (max-width:850px) {
+                width: 90%;
+            }
+        }
+
+        .new-badge {
+            position: absolute;
+            background-color: $primary-red;
+            color: $white;
+            padding: 10px 15px;
+            z-index: 10;
+            position: absolute;
+            font-size: 16px;
+            border-radius: 0 0 15px 15px;
+            top: 46%;
+            rotate: -90deg;
+            left: -35px;
+        }
+
+        >div {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .download-icon {
+            display: flex;
+            padding: 18px;
+            border-radius: 50%;
+            transition: all 0.2s ease;
+            background-color: $white;
+            width: fit-content;
+            border: 1px solid $stroke;
+            font-size: 15px;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            margin-right: 7px;
+
+            img {
+                width: 18px;
+                height: 18px;
+            }
+
+            &:hover {
+                background-color: $primary-blue;
+                border: 1px solid $primary-blue;
+
+                img {
+                    filter: invert(1);
+                }
+            }
+        }
+
+        .view-icon {
+            display: flex;
+            padding: 16.5px 14px;
+            border-radius: 50px;
+            background-color: $primary-blue;
+            color: $white;
+            cursor: pointer;
+            align-items: center;
+
+            img {
+                width: 24px;
+                height: 24px;
+                margin-right: 10px;
+            }
+
+            &:hover {
+                background-color: $secondary-blue;
+            }
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin-left: 23px;
+
+        @media (max-width:850px) {
+            margin-left: 0;
+            width: 100%;
+        }
+
+        &-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 44px;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            h5 {
+                color: $gray;
+                font-size: 22px;
+                margin: 0 0 10px 0;
+            }
+
+            h2 {
+                color: $primary-red;
+                font-size: 28px;
+                margin: 0;
+            }
+
+            a {
+                display: flex;
+                padding: 16.5px 15px;
+                border-radius: 50px;
+                gap: 20px;
+                transition: all 0.2s ease;
+                background-color: $white;
+                color: $dark-gray;
+                width: fit-content;
+                border: 1px solid $stroke;
+                font-size: 15px;
+
+                img {
+                    width: 16px;
+                    height: 16px;
+                    filter: invert(1);
+                    margin: 0;
+                }
+
+                &:hover {
+                    background-color: $primary-blue;
+                    color: $white;
+                    border: 1px solid $primary-blue;
+
+                    img {
+                        filter: invert(0);
+                    }
+                }
+            }
+        }
+
+        &-articles {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            .article-item {
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                background-color: $white;
+                border: 1px solid $stroke-white;
+                border-radius: 30px;
+                padding: 9px 15px;
+                flex-wrap: wrap;
+
+                @media (max-width:850px) {
+                    gap: 30px;
+                }
+
+                &-info {
+                    &-badges {
+                        display: flex;
+                        gap: 10px;
+
+                        span {
+                            border-radius: 10px;
+                            padding: 3px 10px;
+
+                            &:nth-child(1) {
+                                background-color: $primary-blue;
+                                color: $white;
+                            }
+
+                            &:nth-child(2) {
+                                background-color: $light-white;
+                                color: $secondary-blue;
+                            }
+                        }
+                    }
+
+                    h6 {
+                        display: flex;
+                        align-items: center;
+                        margin: 11px 0;
+                        font-size: 20px;
+                        color: $dark-gray;
+                        max-width: 574px;
+
+                        img {
+                            margin: 0 11px 0 0;
+                        }
+                    }
+
+                    &-footer {
+                        display: flex;
+                        align-items: center;
+                        gap: 25px;
+                        flex-wrap: wrap;
+
+                        span {
+                            display: flex;
+                            align-items: center;
+                            font-size: 16px;
+                            color: $dark-gray;
+
+                            img {
+                                margin-right: 6px;
+                            }
+                        }
+                    }
+                }
+
+                &-actions {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+
+                    .link {
+                        display: flex;
+                        padding: 18px;
+                        border-radius: 50%;
+                        transition: all 0.2s ease;
+                        background-color: $white;
+                        width: fit-content;
+                        border: 1px solid $stroke;
+                        font-size: 15px;
+                        cursor: pointer;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 7px;
+
+                        img {
+                            width: 18px;
+                            height: 18px;
+                        }
+
+                        &:hover {
+                            background-color: $primary-blue;
+                            border: 1px solid $primary-blue;
+
+                            img {
+                                filter: invert(1);
+                            }
+                        }
+                    }
+
+                    .view-icon {
+                        display: flex;
+                        padding: 16.5px 14px;
+                        border-radius: 50px;
+                        background-color: $primary-blue;
+                        color: $white;
+                        cursor: pointer;
+                        align-items: center;
+
+                        img {
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 10px;
+                        }
+
+                        &:hover {
+                            background-color: $secondary-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

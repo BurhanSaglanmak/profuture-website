@@ -12,3 +12,7 @@ export { default as Dergi4lu } from "./dergi4lu.svg";
 export { default as ProfutureInfo } from "./profuture-info.svg";
 export { default as Promotion } from "./promotion.svg";
 export { default as ArticleBG } from "./article-bg.svg";
+export { default as CurrentImage } from "./current-image.svg";
+export { default as Page } from "./page.svg";
+export { default as Text } from "./text.svg";
+export { default as Email } from "./email.svg";

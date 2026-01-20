@@ -114,9 +114,6 @@ const Header = () => {
                             <img src={editIcon} alt="edit" />
                             Yazar Rehberi
                         </Link>
-                        <Link to="/" className="header__navbar-buttons-search header__navbar-buttons-search-padding " onClick={toggleMenu}>
-                            <img src={searchIcon} alt="search" />
-                        </Link>
                     </div>
                 </div>
             </div>

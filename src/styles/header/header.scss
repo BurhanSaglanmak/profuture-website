@@ -22,12 +22,15 @@
         background-color: $primary-blue;
         padding: 21px 66px 21px 32px;
         border-radius: 0 120px 0 0;
-        width: 227px;
+        width: 59%;
         height: 91px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         img {
-            width: 100%;
-            height: 91px;
+            width: 168px;
+            height: 119px;
         }
     }
 
@@ -237,9 +240,10 @@
                 &:hover {
                     filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(190deg) brightness(0.8);
                 }
-                &-padding{
-                     padding: 10px 13px;
-                border-radius: 50px;
+
+                &-padding {
+                    padding: 10px 13px;
+                    border-radius: 50px;
                 }
             }
         }
@@ -250,7 +254,7 @@
         position: fixed;
         top: 0;
         left: -100%;
-        width: 50%;
+        width: 60%;
         height: 100vh;
         background-color: $white;
         box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
@@ -292,7 +296,7 @@
 
             a {
                 justify-content: center;
-                width: 100%;
+                width: 80%;
             }
         }
     }
