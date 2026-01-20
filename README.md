@@ -1,3 +1,8 @@
+# Project Title: ProFuture Website — React & Vite-Based Modern Web Application [(LIVE)](https://profuture-burhan-saglanmak.netlify.app/)
+
+ProFuture is a modern web application built with **React** and bootstrapped using **Vite**.  
+It features a scalable **SCSS architecture** and interactive sliders powered by **Swiper**.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
