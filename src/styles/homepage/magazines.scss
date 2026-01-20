@@ -4,7 +4,7 @@
     display: flex;
     margin: 70px 0 160px 0;
     flex-direction: column;
-    padding: 0 140px;
+    padding: 0 120px;
 
     @media (max-width:750px) {
         padding: 0 20px;
@@ -117,6 +117,7 @@
     .magazines-list {
         display: flex;
         gap: 20px;
+        cursor: grab;
 
         .swiper {
             width: 100%;
